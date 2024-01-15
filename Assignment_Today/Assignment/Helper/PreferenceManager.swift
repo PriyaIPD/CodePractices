@@ -40,6 +40,15 @@ class PreferenceManager: NSObject {
         }
     }
     
+    var userID: String {
+        set {
+            defaults.setValue(newValue, forKey: PreferenceKey.userId.rawValue)
+            defaults.synchronize()
+        } get {
+            return defaults.value(forKey: PreferenceKey.userId.rawValue) as? String ?? ""
+        }
+    }
+    
 
 
     // User data dictionary preference
@@ -59,4 +68,6 @@ class PreferenceManager: NSObject {
 enum PreferenceKey: String {
     case isLoggedIn = "Logged_In"
     case userData = "userData"
+    case userId = "userID"
+
 }

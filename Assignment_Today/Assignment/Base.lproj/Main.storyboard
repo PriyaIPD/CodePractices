@@ -46,7 +46,7 @@
                                                         <rect key="frame" x="16" y="8" width="318" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="given-name"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="Kfp-ji-eME" id="1b7-VL-gEa"/>
                                                         </connections>
@@ -79,7 +79,7 @@
                                                         <rect key="frame" x="16" y="8" width="318" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="name"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="Kfp-ji-eME" id="6gP-uf-yPL"/>
                                                         </connections>
@@ -170,7 +170,7 @@
                                                         <rect key="frame" x="16" y="8" width="318" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="Kfp-ji-eME" id="slh-UH-CNq"/>
                                                         </connections>
@@ -271,7 +271,7 @@
                                                         <rect key="frame" x="16" y="8" width="145" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="street-address"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="Kfp-ji-eME" id="es5-ba-9bR"/>
                                                         </connections>
@@ -306,7 +306,7 @@
                                                         <rect key="frame" x="16" y="8" width="129" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="address-line2"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="Kfp-ji-eME" id="Kfm-Od-SPf"/>
                                                         </connections>
@@ -408,7 +408,7 @@
                                                         <rect key="frame" x="16" y="8" width="125" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="address-level2"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="Kfp-ji-eME" id="mNP-dR-Cpj"/>
                                                         </connections>
@@ -442,7 +442,7 @@
                                                         <rect key="frame" x="16" y="8" width="149" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="address-level1"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="Kfp-ji-eME" id="Fjv-Jg-PXB"/>
                                                         </connections>
@@ -476,7 +476,7 @@
                                                         <rect key="frame" x="16" y="8" width="125" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="postal-code"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="Kfp-ji-eME" id="irU-cp-mwZ"/>
                                                         </connections>
@@ -507,10 +507,10 @@
                                                 <rect key="frame" x="0.0" y="728" width="390" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tf2-Xj-bo8">
-                                                        <rect key="frame" x="16" y="8" width="104" height="64"/>
+                                                        <rect key="frame" x="16" y="8" width="153" height="64"/>
                                                         <color key="backgroundColor" red="0.90980392160000001" green="0.1059999987" blue="0.17599999899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="104" id="vvW-dP-blk"/>
+                                                            <constraint firstAttribute="width" constant="153" id="vvW-dP-blk"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -532,31 +532,11 @@
                                                             <action selector="addPressedWithSender:" destination="Kfp-ji-eME" eventType="touchUpInside" id="JxU-YA-WFX"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9E-ZJ-yxs">
-                                                        <rect key="frame" x="275" y="8" width="99" height="64"/>
-                                                        <color key="backgroundColor" red="0.90980392160000001" green="0.1059999987" blue="0.17599999899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="99" id="jmf-kV-HmH"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="Delete">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="12"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="deletePressedWithSender:" destination="Kfp-ji-eME" eventType="touchUpInside" id="CU0-Pa-oH9"/>
-                                                        </connections>
-                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yM8-ce-I2c">
-                                                        <rect key="frame" x="136" y="8" width="116" height="64"/>
+                                                        <rect key="frame" x="214" y="8" width="160" height="64"/>
                                                         <color key="backgroundColor" red="0.90980392160000001" green="0.1059999987" blue="0.17599999899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="116" id="xh1-es-FNH"/>
+                                                            <constraint firstAttribute="width" constant="160" id="xh1-es-FNH"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -575,14 +555,12 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="r9E-ZJ-yxs" firstAttribute="leading" secondItem="yM8-ce-I2c" secondAttribute="trailing" constant="23" id="7DD-Ly-dgf"/>
+                                                    <constraint firstItem="yM8-ce-I2c" firstAttribute="width" secondItem="Tf2-Xj-bo8" secondAttribute="width" multiplier="1.04575" id="0cE-qY-zGR"/>
                                                     <constraint firstAttribute="bottom" secondItem="Tf2-Xj-bo8" secondAttribute="bottom" constant="8" id="7uR-62-zBb"/>
                                                     <constraint firstItem="Tf2-Xj-bo8" firstAttribute="leading" secondItem="tWk-dT-jPN" secondAttribute="leading" constant="16" id="BuS-u6-EXr"/>
                                                     <constraint firstAttribute="height" constant="80" id="C2h-gf-wKN"/>
-                                                    <constraint firstAttribute="trailing" secondItem="r9E-ZJ-yxs" secondAttribute="trailing" constant="16" id="FZy-ni-sr3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yM8-ce-I2c" secondAttribute="trailing" constant="16" id="MFe-O9-fKO"/>
                                                     <constraint firstAttribute="bottom" secondItem="yM8-ce-I2c" secondAttribute="bottom" constant="8" id="ge9-hk-8pi"/>
-                                                    <constraint firstItem="r9E-ZJ-yxs" firstAttribute="top" secondItem="tWk-dT-jPN" secondAttribute="top" constant="8" id="oha-EH-ilx"/>
-                                                    <constraint firstAttribute="bottom" secondItem="r9E-ZJ-yxs" secondAttribute="bottom" constant="8" id="uFa-me-t9r"/>
                                                     <constraint firstItem="yM8-ce-I2c" firstAttribute="top" secondItem="tWk-dT-jPN" secondAttribute="top" constant="8" id="x8K-yY-K9e"/>
                                                     <constraint firstItem="Tf2-Xj-bo8" firstAttribute="top" secondItem="tWk-dT-jPN" secondAttribute="top" constant="8" id="yjp-TC-6rb"/>
                                                 </constraints>
@@ -780,8 +758,8 @@
                                             <action selector="backActionWithSender:" destination="AXK-Fa-Tsj" eventType="touchUpInside" id="dYb-ro-5oZ"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pg7-ez-4vT">
-                                        <rect key="frame" x="129.33333333333331" y="18" width="131.33333333333331" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pg7-ez-4vT">
+                                        <rect key="frame" x="148.33333333333334" y="18" width="93.333333333333343" height="20"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -875,6 +853,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgP-0d-uln" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3569.4656488549617" y="1021.1267605633803"/>
+        </scene>
+        <!--SuccessVC-->
+        <scene sceneID="I8m-bl-hjw">
+            <objects>
+                <viewController storyboardIdentifier="SuccessVC" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0GA-sI-J5b" customClass="SuccessVC" customModule="Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uac-X8-kJg">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tyb-tz-zcT">
+                                <rect key="frame" x="0.0" y="59" width="390" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsJ-C4-kRG">
+                                        <rect key="frame" x="148.33333333333334" y="18" width="93.333333333333343" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="LRW-lf-1wB"/>
+                                    <constraint firstItem="FsJ-C4-kRG" firstAttribute="centerY" secondItem="Tyb-tz-zcT" secondAttribute="centerY" id="P9b-IM-ArU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="la3-N2-Yux"/>
+                                    <constraint firstItem="FsJ-C4-kRG" firstAttribute="centerX" secondItem="Tyb-tz-zcT" secondAttribute="centerX" id="oha-zf-6au"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUg-u2-fpE">
+                                <rect key="frame" x="0.0" y="123" width="390" height="877"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations! User Registered" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1m-ap-Rjy">
+                                        <rect key="frame" x="12" y="401.66666666666663" width="366" height="74"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="i1m-ap-Rjy" firstAttribute="leading" secondItem="UUg-u2-fpE" secondAttribute="leading" constant="12" id="26i-dH-SOC"/>
+                                    <constraint firstItem="i1m-ap-Rjy" firstAttribute="centerX" secondItem="UUg-u2-fpE" secondAttribute="centerX" id="Wfl-VX-eFg"/>
+                                    <constraint firstItem="i1m-ap-Rjy" firstAttribute="centerY" secondItem="UUg-u2-fpE" secondAttribute="centerY" id="gs7-xF-zsZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="i1m-ap-Rjy" secondAttribute="trailing" constant="12" id="xOx-dI-6mh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6BA-Jy-U0N"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UUg-u2-fpE" secondAttribute="bottom" id="8WL-H1-qLD"/>
+                            <constraint firstAttribute="bottom" secondItem="UUg-u2-fpE" secondAttribute="bottom" id="DZT-MA-Upk"/>
+                            <constraint firstItem="UUg-u2-fpE" firstAttribute="leading" secondItem="6BA-Jy-U0N" secondAttribute="leading" id="GNS-SM-a36"/>
+                            <constraint firstItem="Tyb-tz-zcT" firstAttribute="trailing" secondItem="6BA-Jy-U0N" secondAttribute="trailing" id="Nub-2H-ek4"/>
+                            <constraint firstItem="UUg-u2-fpE" firstAttribute="top" secondItem="Tyb-tz-zcT" secondAttribute="bottom" constant="8" symbolic="YES" id="Rly-cc-25G"/>
+                            <constraint firstItem="UUg-u2-fpE" firstAttribute="trailing" secondItem="6BA-Jy-U0N" secondAttribute="trailing" id="TVH-hf-9kl"/>
+                            <constraint firstItem="UUg-u2-fpE" firstAttribute="leading" secondItem="6BA-Jy-U0N" secondAttribute="leading" id="kaM-83-Jb9"/>
+                            <constraint firstItem="Tyb-tz-zcT" firstAttribute="top" secondItem="6BA-Jy-U0N" secondAttribute="top" id="o7b-J8-0IB"/>
+                            <constraint firstItem="Tyb-tz-zcT" firstAttribute="leading" secondItem="6BA-Jy-U0N" secondAttribute="leading" id="sa2-QY-QqL"/>
+                            <constraint firstItem="UUg-u2-fpE" firstAttribute="trailing" secondItem="6BA-Jy-U0N" secondAttribute="trailing" id="zCl-Ok-7bf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jgJ-yH-Pbg"/>
+                    <size key="freeformSize" width="390" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dL9-Pn-Kyr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4212" y="1021"/>
         </scene>
     </scenes>
     <resources>

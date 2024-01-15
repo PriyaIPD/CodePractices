@@ -30,6 +30,10 @@
 		A6D13FBB2B50A1AA004DD022 /* ProfileDetailTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D13FB92B50A1AA004DD022 /* ProfileDetailTVC.xib */; };
 		A6D13FBD2B50A250004DD022 /* UserDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D13FBC2B50A250004DD022 /* UserDetailVC.swift */; };
 		A6D13FC02B50A335004DD022 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D13FBF2B50A335004DD022 /* UserViewModel.swift */; };
+		A6D5A3BB2B55B02700228C7B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D5A3B62B55B02700228C7B /* API.swift */; };
+		A6D5A3C02B55B21000228C7B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A6D5A3BF2B55B21000228C7B /* IQKeyboardManagerSwift */; };
+		A6D5A3C32B55E7CF00228C7B /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = A6D5A3C22B55E7CF00228C7B /* MBProgressHUD */; };
+		A6D5A3C52B55EC6200228C7B /* SuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D5A3C42B55EC6200228C7B /* SuccessVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,8 @@
 		A6D13FB92B50A1AA004DD022 /* ProfileDetailTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileDetailTVC.xib; sourceTree = "<group>"; };
 		A6D13FBC2B50A250004DD022 /* UserDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailVC.swift; sourceTree = "<group>"; };
 		A6D13FBF2B50A335004DD022 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		A6D5A3B62B55B02700228C7B /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A6D5A3C42B55EC6200228C7B /* SuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D5A3C32B55E7CF00228C7B /* MBProgressHUD in Frameworks */,
 				A6B717B22B5094A400534929 /* CountryPicker in Frameworks */,
+				A6D5A3C02B55B21000228C7B /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +143,7 @@
 				A6B717742B50747500534929 /* SceneDelegate.swift */,
 				A6B717762B50747500534929 /* ViewController.swift */,
 				A6D13FBC2B50A250004DD022 /* UserDetailVC.swift */,
+				A6D5A3C42B55EC6200228C7B /* SuccessVC.swift */,
 				A6B717782B50747500534929 /* Main.storyboard */,
 				A6B7177E2B50747800534929 /* Assets.xcassets */,
 				A6B717802B50747800534929 /* LaunchScreen.storyboard */,
@@ -164,6 +173,7 @@
 		A6B717A52B507D4F00534929 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				A6D5A3B32B55B02700228C7B /* Networking */,
 				A6B717AD2B5086B800534929 /* Validation */,
 				A6B717A62B507D5500534929 /* Extensions */,
 				A6B717BF2B509F9000534929 /* PreferenceManager.swift */,
@@ -256,6 +266,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		A6D5A3B32B55B02700228C7B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A6D5A3B62B55B02700228C7B /* API.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -274,6 +292,8 @@
 			name = Assignment;
 			packageProductDependencies = (
 				A6B717B12B5094A400534929 /* CountryPicker */,
+				A6D5A3BF2B55B21000228C7B /* IQKeyboardManagerSwift */,
+				A6D5A3C22B55E7CF00228C7B /* MBProgressHUD */,
 			);
 			productName = Assignment;
 			productReference = A6B7176F2B50747500534929 /* Assignment.app */;
@@ -349,6 +369,8 @@
 			mainGroup = A6B717662B50747500534929;
 			packageReferences = (
 				A6B717B02B5094A300534929 /* XCRemoteSwiftPackageReference "CountryPicker" */,
+				A6D5A3BE2B55B20F00228C7B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				A6D5A3C12B55E7CF00228C7B /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 			);
 			productRefGroup = A6B717702B50747500534929 /* Products */;
 			projectDirPath = "";
@@ -397,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D13FBA2B50A1AA004DD022 /* ProfileDetailTVC.swift in Sources */,
+				A6D5A3C52B55EC6200228C7B /* SuccessVC.swift in Sources */,
 				A6B717C02B509F9000534929 /* PreferenceManager.swift in Sources */,
 				A6B717BD2B50977500534929 /* ListTVC.swift in Sources */,
 				A6B717B72B50965E00534929 /* ListView.swift in Sources */,
@@ -409,6 +432,7 @@
 				A6B717732B50747500534929 /* AppDelegate.swift in Sources */,
 				A6B717752B50747500534929 /* SceneDelegate.swift in Sources */,
 				A6B717AF2B5086C300534929 /* Validation.swift in Sources */,
+				A6D5A3BB2B55B02700228C7B /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +614,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5JH7CW5LV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Assignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -617,6 +642,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5JH7CW5LV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Assignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -759,6 +785,22 @@
 				minimumVersion = 2.0.3;
 			};
 		};
+		A6D5A3BE2B55B20F00228C7B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		A6D5A3C12B55E7CF00228C7B /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -766,6 +808,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A6B717B02B5094A300534929 /* XCRemoteSwiftPackageReference "CountryPicker" */;
 			productName = CountryPicker;
+		};
+		A6D5A3BF2B55B21000228C7B /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6D5A3BE2B55B20F00228C7B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		A6D5A3C22B55E7CF00228C7B /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6D5A3C12B55E7CF00228C7B /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 

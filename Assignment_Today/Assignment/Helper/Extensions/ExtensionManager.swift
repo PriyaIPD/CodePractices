@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class ExtensionManager: NSObject {
 
@@ -139,5 +140,22 @@ extension UIApplication {
             return topViewController(controller: presented)
         }
         return controller
+    }
+}
+
+extension UIViewController {
+
+    //MARK: Show Progress hud
+    func showHUD(progressLabel:String){
+        DispatchQueue.main.async{
+            let progressHUD = MBProgressHUD.showAdded(to: self.view, animated: true)
+            progressHUD.label.text = progressLabel
+        }
+    }
+    //MARK: hide Progress hud
+    func dismissHUD(isAnimated:Bool) {
+        DispatchQueue.main.async{
+            MBProgressHUD.hide(for: self.view, animated: isAnimated)
+        }
     }
 }

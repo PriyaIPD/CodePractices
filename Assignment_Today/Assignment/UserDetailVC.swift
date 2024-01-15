@@ -20,7 +20,39 @@ class UserDetailVC: UIViewController {
     
     //MARK: - UIButton Actions
     @IBAction func confirmAction(sender : UIButton){
-        self.presentAlert(withTitle: "Message", message: "Changes Confirmed")
+        showHUD(progressLabel: "")
+        let param : [String : Any] = ["firstName" :vm.userInfo?.firstName ?? "",
+                                      "lastName": vm.userInfo?.lastName ?? "",
+                                      "streetName": vm.userInfo?.streetName ?? "",
+                                      "streetNumber": vm.userInfo?.streetNumber ?? "",
+                                      "poBox": vm.userInfo?.poBox ?? "",
+                                      "city": vm.userInfo?.city ?? "",
+                                      "country": vm.userInfo?.country ?? "",
+                                      "email": vm.userInfo?.email ?? "",
+                                      "password": vm.userInfo?.password ?? ""]
+            
+            
+            vm.loginUser1(param: param) { userDetail, isSuccess in
+                if isSuccess {
+                    DispatchQueue.main.async{
+                        self.dismissHUD(isAnimated: true)
+                        self.alert(title: "Message", message: "User registered successfully", actionTitle: "Ok") {
+                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "SuccessVC") as! SuccessVC
+                            self.navigationController?.pushViewController(vc, animated: true)
+                        }
+
+                    }
+                }else{
+                    DispatchQueue.main.async{
+                        self.dismissHUD(isAnimated: true)
+                        self.presentAlert(withTitle: "Warning", message: "Something went wrong")
+
+                    }
+            }
+            
+        }
+        
+         
     }
     
     @IBAction func backAction(sender : UIButton){
